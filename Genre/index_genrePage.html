@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title> Video Game Sales </title>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+​
+<title>Video Games Sales</title>
+​
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Start of navbar -->
+    <div class="navigation">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Back to Homepage</a>
+          <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots by Filters</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="genre.html">Genre</a>
+                  <a class="dropdown-item" href="year.html">Year</a>
+                  <a class="dropdown-item" href="publisher.html">Publisher</a>
+                  <a class="dropdown-item" href="platform.html">Platform</a>
+                </div>
+              </li>
+              <!-- <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li> -->
+              <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+      <!-- End of navbar -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+
+        <h2>Video Games Sales</h2>
+
+        <h1>By Genre</h1>
+      </div>
+    </div>
+    <div id="picture"><img src="Images/tom nook.png" width="10" alt="img" class="description-image_two"></div> 
+    <div id="picture"><img src="Images/punchy.png" width="100" alt="img" class="description-image_three"></div> 
+
+    <div class="row">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <h2>Select Your Region</h2>
+  <select id="selDataset" onchange="getData(this.value)">
+      <option value="NA_Sales">North America</option>
+      <option value="EU_Sales">Europe</option>
+      <option value="JP_Sales">Japan</option>
+  </select> 
+
+  <div class = "col-md-20">
+  <div id="pie"></div>
+
+  <div id="picture"><img src="Images/timmy and tommy2.png" width="100" alt="img" class="description-image"></div>   
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="genre_app.js"></script>
+
+  <!-- <script>console.log(data)</script> -->
+
+
+    <!-- Start of footer -->
+    <footer>
+      <div class="footer">Tom Nook Analytics - Project Team<br>
+        Hannah Golledge | Hung Nguyen | Monte Rodriguez | Peter Lu
+      </div>
+
+    </footer>
+    <!-- End of footer -->
+</body>
+
+</html>
