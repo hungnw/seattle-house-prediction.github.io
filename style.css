@@ -1,6 +1,8 @@
 style.css
 
-
+/* * {
+	box-sizing: border-box;
+  } */
 
 body{
     background-color: #EDEDED; 
@@ -8,8 +10,8 @@ body{
 
 .navbar{
     max-height: 50px; 
-	background-color: #cacccb; 
-    font-size: 15px; 
+	background-color: #577399;
+	font-size: 15px; 
 }
 
 .navigation .navbar-brand{
@@ -17,8 +19,9 @@ body{
 	margin-left: 50px; 
 	padding: inherit; 
 	font-weight: bold; 
-	background-color: #38ab87;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	background-color: #011627;
+	font-family: Arial, serif;
+	border-radius: 8px;
 }
 
 .dropdown-item{
@@ -34,10 +37,12 @@ body{
 }
 
 
+
+
 /* Media Queries */
 @media (max-width: 991.98px){
 .navbar-expand-lg{
-	background-color: #38ab87;
+	background-color: #011627;
 }
 .navbar{
     max-height: none; 
@@ -78,10 +83,10 @@ button:focus {
 .description-header, .imageNav-header {
 	padding-top: 15px; 
 	padding-left: 4px;
-	color: #38ab87;
+	color: #011627;
 	font-size: 26px;
 	font-weight: bold;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: Arial;
 }
 
 img{
@@ -103,15 +108,15 @@ p{
 
 
 .active, .imageNav-photo:hover{
-    border-color:#38ab87;
+    border-color:#011627;
     border-style: solid; 
 }
 
 .footer{
-	background-color: #505251; 
+	background-color: #495867; 
     border-top-style: solid; 
     border-top-width: 4px; 
-    border-top-color: #38ab87;
+    border-top-color: #011627;
     color: white; 
     min-height: 50px; 
     font-family: Arial, Helvetica, sans-serif;
@@ -134,10 +139,17 @@ a.button {
 }
 
 button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
+	background-color: #011627; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 8px;
 }
+
+/* .button {
+	
+  } */
