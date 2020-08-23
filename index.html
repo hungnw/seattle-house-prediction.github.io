@@ -7,109 +7,96 @@
         <title>Seattle Housing Price Prediction</title>
     ​    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
         ​
     </head>
-​
+
     <body>
-    <!-- Start of navbar -->
-        <div class="navigation">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                  <a class="navbar-brand" href="index.html">Seattle House Price Prediction</a>
-                  <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-      ​
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Price Prediction Models</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <!-- <a class="dropdown-item" href="Model/index.html">Find a Price</a> -->
-                      <a class="dropdown-item" href="Model/index.html">Multiple Linear Regression</a>
-                      <a class="dropdown-item" href="https://bootcamp2020-ml.herokuapp.com/">Random Forest</a>
-                    </div>
-                  </li>
-                 
-                  <li class="nav-item">
-              <a class="nav-link" href="tab1.html">Tableau Visualizations</a>
-            </li>
-                </ul>
-              </div>
-            </nav>
-        </div>
-    <!-- End of navbar -->
+        <header>
+            <div class="navigation">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                      <a class="navbar-brand" href="index.html">Seattle House Price Prediction</a>
+                      <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </button>
+          ​
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Price Prediction Models</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <!-- <a class="dropdown-item" href="Model/index.html">Find a Price</a> -->
+                          <a class="dropdown-item" href="Model/index.html">Multiple Linear Regression</a>
+                          <a class="dropdown-item" href="https://bootcamp2020-ml.herokuapp.com/">Random Forest</a>
+                        </div>
+                      </li>
+                     
+                      <li class="nav-item">
+                  <a class="nav-link" href="tab1.html">Tableau Visualizations</a>
+                </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </header>
+
+        <col1>
+        </col1>
 
 
-    <!-- Start of container -->
-    <div class="container">
-
-
-
-
-        <section class="row">
-
-        <div class="col-lg-6 col-md-12">
-
-
-            <div class="description-content">
-              <h1 class="description-header">Waka Waka Seattle House Price Prediction</h1>
+        <main>
+            <br><br>
+              <h1 class="description-header">Seattle House Price Prediction</h1>
+              <p>Team Waka Waka</p>
               <hr>
                <!-- <a href="index.html"> -->
                 <img src="images/seattle2.PNG" alt="Genre", title="img" class="imageNav-photo", width="15", height="15">
-              </a>
-              <br><br>
-              <p>Welcome to the Seattle House Price Prediction website.
+                </a>
+                <br><br>
+                <p>Welcome to the Seattle House Price Prediction website!</p>
 
-                We want to predict Seattle metropolitan home prices using two different machine learning models: random forest and linear regression. We used data from Seattle home sales during the 2014-2015 time period. After examining and cleaning the Seattle home data, we noticed several sections that could potentially affect the accuracy of our machine learningmodels. A couple of examples of information that can affect the accuracy of our models include data showing whether the home was renovated in addition to when the home was built, and a numeric scale to show the value of the home's view. After taking this into consideration we decided that a successful prediction model should have at least a 75% accuracy reading. </p>
-               
-<br>
+                <p>We want to predict Seattle metropolitan home prices using two different machine learning models: Random Forest and Linear Regression. 
+                    
+                <p>We used data from Seattle home sales during the May2014 - May2015 time period. After examining and cleaning the Seattle home data, we noticed several sections that could potentially affect the accuracy of our machine learningmodels. A couple of examples of information that can affect the accuracy of our models include data showing whether the home was renovated in addition to when the home was built, and a numeric scale to show the value of the home's view. 
+                </p>
 
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcLd-v-e37sOyKwUi57B0N1HBadHkwaxPx1gWlgo3iBKvMEovs87Y2KZivh1Xj9mhLUw003QGM7PUW/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<br><br><br><br>
-          </div>
-        </div>
-        <div class="col-lg-1 col-md-12">
-        </div>
-        <div class="col-lg-5 col-md-12">
-​
-          <!-- Start of Visualizations imageNav Area -->
-          <section id="imageNav-area">
-            <div class="imageNav-content">
-              <!-- <h4 class="imageNav-header">Data visualization by Different Filters</h4> -->
-              <h4 class="imageNav-header">Price Prediction</h4>
+                <p>After taking this into consideration we decided that a successful prediction model should have at least a 75% accuracy reading. </p>
 
-              <!-- <hr /> -->
-              <div class="container">
-			    <div class="row">
-				  <div class="col-6">
-                    <br>
-                    <button onclick="document.location='Model/index.html'">Multiple Linear Regression</button> <br><br>
-                    <button onclick="document.location='https://bootcamp2020-ml.herokuapp.com/'">Random Forest</button> <br><br>
+                <br>
+        </main>
 
-                    <h4 class="imageNav-header">Charts</h4><br>
+        <col3>
+        </col3>
 
-                    <button onclick="document.location='tab1.html'">Tableau Visualizations</button> <br><br>
+        <aside>
+            <br><br>
 
-          <!-- End of the Visualizations imageNav Area -->
-​
-    
-    <!-- End of container -->
-​
-    <!-- Start of footer -->
-    <footer>
-      <div class="footer">Seattle House Price Prediction - Team Waka Waka <br>
-        Adil Ahmed | Eric Wu | Hannah Golledge | Hung Nguyen | Karen Galindo Choudhary | Monte Rodriguez
-      </div>
+            <h4 class="imageNav-header">ML Models</h4>
+            <br>
+            <button onclick="document.location='Model/index.html'">Multiple Linear Regression</button> <br><br>
+            
+            <button onclick="document.location='https://bootcamp2020-ml.herokuapp.com/'">Random Forest</button> <br><br>
 
-    </footer>
-    <!-- End of footer -->
-​
+            <h4 class="imageNav-header">Charts</h4><br>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <button onclick="document.location='tab1.html'">Tableau Visualizations</button>
+        </aside>
+
+        <col5></col5>
+
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcLd-v-e37sOyKwUi57B0N1HBadHkwaxPx1gWlgo3iBKvMEovs87Y2KZivh1Xj9mhLUw003QGM7PUW/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+        </iframe>
+
+        <lastrowspace>
+            <br><br><br><br><br><br>
+        </lastrowspace>
+        
+        <footer>
+            <div class="footer">Seattle House Price Prediction - Team Waka Waka <br>
+                Adil Ahmed | Eric Wu | Hannah Golledge | Hung Nguyen | Karen Galindo Choudhary | Monte Rodriguez
+            </div>
+        </footer>
+
     </body>
-​
 </html>
