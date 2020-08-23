@@ -3,7 +3,7 @@ html, body {
 }
 body {
     display: grid;
-    grid-template-columns:  22%  41% 3% 12%  22%;
+    grid-template-columns:  20%  41% 3% 14%  20%;
     grid-template-rows: min-content auto min-content;
 }
 
