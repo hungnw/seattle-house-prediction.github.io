@@ -57,7 +57,7 @@ body{
 }
 
 button{
-    margin-left: auto; 
+	margin-left: auto; 
 }
 
 button:focus {
@@ -91,7 +91,7 @@ button:focus {
 	padding-top: 15px; 
 	padding-left: 4px;
 	color: #011627;
-	font-size: 26px;
+	font-size: 35px;
 	font-weight: bold;
 	font-family: Arial;
 }
@@ -109,7 +109,7 @@ img{
 
 p{
 	color: #414d4a;
-	font-size: 14px;
+	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -155,6 +155,7 @@ button {
 	display: inline-block;
 	font-size: 20px;
 	border-radius: 8px;
+	width:200px;
 }
 
 /* .button {
