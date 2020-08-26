@@ -1,102 +1,119 @@
 <!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Seattle Housing Price Prediction</title>
+    ​    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        ​
+    </head>
 
-<html>
+    <body>
+        <header>
+            <div class="navigation">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">Seattle House Price Prediction</a>
+                        
+                        <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+          ​
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Price Prediction Models</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <!-- <a class="dropdown-item" href="Model/index.html">Find a Price</a> -->
+                                    <a class="dropdown-item" href="Model/index.html">Multiple Linear Regression</a>
+                                    <a class="dropdown-item" href="heroku.html">Random Forest</a>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-item">
+                            <a class="nav-link" href="tab1.html">Tableau Visualizations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-<head>
-    <title>Seatle Metropolitan House Price Prediction</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-	<link rel="stylesheet" href="styles.css">
-	​<style>
-		.ask {
-		  display: block;
-		  margin-left: 37%;
-		  margin-right: 37%;
-		}
+        <col1>
+        </col1>
 
-		.kidding {
-		  display: block;
-		  margin-left: 50%;
-		  margin-right: 25%;
-		}
+        <main>
+                <br><br>
+                
+                <h1 class="description-header">Seattle House Price Prediction</h1>
+                
+                <p>Team Waka Waka - UCI Data Bootcamp 2020</p>
 
-		.button {
-			border: none;
-			color: rgb(21, 21, 250);
-			padding: 15px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			border-radius: 8px;
-        }
+                <hr>
+                <!-- <a href="index.html"> -->
+                <img src="images/seattle2.PNG" alt="Seattle", title="img" class="imageNav-photo", width="15", height="15">
+                <!-- </a> -->
+                <br><br>
 
-        .button1 {background-color: lightyellow;} /* Green */
-        .button2 {background-color: #008CBA;} /* Blue */
-	</style>
-</head>
+                <p>Welcome to the Seattle House Price Prediction website!</p>
 
-<body>
+                <p>We want to predict Seattle metropolitan home prices using two different machine learning models: Random Forest and Linear Regression. 
+                    
+                <p>We used data from Seattle home sales during the May2014 - May2015 time period. After examining and cleaning the Seattle home data, we noticed several sections that could potentially affect the accuracy of our machine learningmodels. A couple of examples of information that can affect the accuracy of our models include data showing whether the home was renovated in addition to when the home was built, and a numeric scale to show the value of the home's view. 
+                </p>
 
-	<button class="button button1" onclick="document.location='../index.html'">Homepage</button>
+                <p>After taking this into consideration we decided that a successful prediction model should have at least a 75% accuracy reading. </p>
 
+                <br>
+        </main>
 
-	<div class="img"></div>
+        <col3>
+        </col3>
 
-	<h2 class="title">Price Prediction using <br> Multiple Linear Regression</h2>
-	
-<br>
+        <aside>
+            <br><br>
 
+            <h4 class="imageNav-header">ML Models</h4>
 
-	<form class="form" oninput="x.value=(-53872)*parseInt(a.value)+18204*parseInt(b.value)+ 284*parseInt(c.value)+(-0.35)*parseInt(d.value)+18939*parseInt(e.value)+
-	519018*parseInt(f.value)+67073*parseInt(g.value)+45901*parseInt(h.value)+388*parseInt(i.value)+(-38208171)">
+            <br>
 
-		<h2 class="bhk">Number of Bedrooms  <input type="number" id="bed" value="3"></h2>
+            <button onclick="document.location='Model/index.html'">Multiple Linear Regression</button> <br><br>
+            
+            <button onclick="document.location='heroku.html'">Random Forest</button> <br><br>
 
-		<h2 class="bhk">Number of Bathrooms <input type="number" id="bath" value="2"></h2>
+            <h4 class="imageNav-header">Charts</h4><br>
 
-		<h2 class="bhk">Living Square Footage  <input type="number" id="living" value="2500"></h2> 
+            <button onclick="document.location='tab1.html'">Tableau Visualizations</button>
 
-		<h2 class="bhk">Lot Square Footage  <input type="number" id="lot" value="3000"></h2> 
-		
-		<h2 class="bhk">Number of Floors  <input type="number" id="floor" value="2"></h2> 
+            <br><br><br>
 
-		<h2 class="bhk">Close to Waterfront  <input type="number" id="waterfront" value="1"></h2> 
-		
-		<h2 class="bhk">Having Good View  <input type="number" id="view" value="5"></h2>
+            <a style="font-size:26px;color:#577399" href="https://github.com/ericgwu715/final_project-">Link to GitHub</a>
 
-		<h2 class="bhk" >Current Condition  <input type="number" id="condition" value="5"></h2> 
-		
-        <h2 class="bhk">Year built  <input type="number" id="year_built" value="1900"></h2>
+            <br><br>
+
+            <a style="font-size:26px;color:#577399" href="kidding.html">Q&A</a>
+
+        </aside>
+
+        <col5></col5>
+
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcLd-v-e37sOyKwUi57B0N1HBadHkwaxPx1gWlgo3iBKvMEovs87Y2KZivh1Xj9mhLUw003QGM7PUW/embed?start=false&loop=false&delayms=3000" frameborder="0" width=800 height=480 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+        </iframe>
+
+        <lastrowspace>
+            <br><br><br><br><br><br>
+        </lastrowspace>
         
-        <h2 class="bhk">Year renovated  <input type="number" id="year_renovated" value="2010"></h2>
+        <footer>
+            <div class="footer">Seattle House Price Prediction - Team Waka Waka <br>
+                Adil Ahmed | Eric Wu | Hannah Golledge | Hung Nguyen | Karen Galindo Choudhary | Monte Rodriguez
+            </div>
+        </footer>
 
-        <h2 class="bhk">Zipcode  <input type="number" id="zipcode" value="98188"></h2>
-
-        <h2 class="bhk">Year to buy<input type="number" id="year_sold" value="2020"></h2>
-
-        <h2 class="bhk">Month to buy<input type="number" id="month_sold" value="2"></h2>
-
-
-
-
-        <button type="button" class="button" onclick="predict()">Predict Price</button>
-        
-        <p id="predict" class="submit" class="bhk"></p>
-
-        <script src="script.js">
-
-        </script>
-
-	</form>
-
-<br><br><br><br><br><br>
-
-
-
-</body>
+    </body>
 </html>
 
+<!-- width="960" height="569" -->
