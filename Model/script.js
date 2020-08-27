@@ -38,10 +38,10 @@ function predict() {
 
     var hihi = numberWithCommas(hehe);
 
-    if (bed==0 || bath ==0 || living ==0 || lot == 0 || floor == 0 || 
-        waterfront == 0 || view == (-1) || condition == 0 || year_built == 0
-        || year_renovated == (-1) || zipcode == 0|| year_sold ==0 
-        || month_sold ==0) {
+    if (bed=="blank" || bath =="blank" || living =="blank" || lot == "blank" || floor == "blank" || 
+        waterfront == "blank" || view == "blank" || condition =="blank" || year_built == "blank"
+        || year_renovated == "blank" || zipcode == "blank"|| year_sold =="blank" 
+        || month_sold =="blank") {
         alert("Please select value for all the features");
     }
 
