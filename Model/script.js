@@ -39,8 +39,8 @@ function predict() {
     var hihi = numberWithCommas(hehe);
 
     if (bed==0 || bath ==0 || living ==0 || lot == 0 || floor == 0 || 
-        waterfront == 0 || view == 0 || condition == 0 || year_built == 0
-        || year_renovated == 0 || zipcode == 0|| year_sold ==0 
+        waterfront == 0 || view == (-1) || condition == 0 || year_built == 0
+        || year_renovated == (-1) || zipcode == 0|| year_sold ==0 
         || month_sold ==0) {
         alert("Please select value for all the features");
     }
