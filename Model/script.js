@@ -1,3 +1,7 @@
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
 function predict() {
     var bed = document.getElementById("bed").value ;
     var bath = document.getElementById("bath").value ;
@@ -30,7 +34,12 @@ function predict() {
     +month_sold*	585.632082
     -47107029.94677467;
 
-    document.getElementById("predict").innerHTML = estimated_price.toFixed(2)
+    var hehe = estimated_price.toFixed(2);
 
-;
+    var hihi = numberWithCommas(hehe);
+
+
+    document.getElementById("dollarsign").innerHTML = "$ ";
+
+    document.getElementById("number").innerHTML = hihi;
 }
