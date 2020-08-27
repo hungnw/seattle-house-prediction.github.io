@@ -13,7 +13,7 @@ function predict() {
     var year_sold = document.getElementById("year_sold").value ;
     var month_sold = document.getElementById("month_sold").value ;
 
-    document.getElementById("predict").innerHTML = 
+    var estimated_price = 
 
     bed *(-56024.756064)
     +bath * 60835.739893
@@ -28,6 +28,9 @@ function predict() {
     +zipcode	*(-21.497227)
     +year_sold*	27150.898226
     +month_sold*	585.632082
-    +(-47107029.94677467)
+    -47107029.94677467;
+
+    document.getElementById("predict").innerHTML = estimated_price.toFixed(2)
+
 ;
 }
