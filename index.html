@@ -1,119 +1,226 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Seattle Housing Price Prediction</title>
-    ​    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="grid.css">
-        ​
-    </head>
+body,
+html {
+  height: 100%;
+}
 
-    <body>
-        <header>
-            <div class="navigation">
-                <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">Seattle House Price Prediction</a>
-                        
-                        <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-          ​
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Price Prediction Models</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <!-- <a class="dropdown-item" href="Model/index.html">Find a Price</a> -->
-                                    <a class="dropdown-item" href="Model/index.html">Multiple Linear Regression</a>
-                                    <a class="dropdown-item" href="heroku.html">Random Forest</a>
-                                </div>
-                            </li>
-                        
-                            <li class="nav-item">
-                            <a class="nav-link" href="tab1.html">Tableau Visualizations</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+.img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(19, 19, 235, 0.5),
+      rgba(22, 96, 207, 0.735)
+    ),
+    url("seatle.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-        <col1>
-        </col1>
+.title {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
 
-        <main>
-                <br><br>
-                
-                <h1 class="description-header">Seattle House Price Prediction</h1>
-                
-                <p>Team Waka Waka - UCI Data Bootcamp 2020</p>
+.title:hover {
+  transition: 0.5s;
+  color: yellow
+   /* #d80286 */
+   ;
+}
 
-                <hr>
-                <!-- <a href="index.html"> -->
-                <img src="images/seattle2.PNG" alt="Seattle", title="img" class="imageNav-photo", width="15", height="15">
-                <!-- </a> -->
-                <br><br>
+input[type="number"],
+select option {
+  background-color:lightgoldenrodyellow
+   /* #d80286 */
+   ;
+  color: black;
+}
 
-                <p>Welcome to the Seattle House Price Prediction website!</p>
+.sqft,
+.bath,
+.bhk,
+.loc {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
 
-                <p>We want to predict Seattle metropolitan home prices using two different machine learning models: Random Forest and Linear Regression. 
-                    
-                <p>We used data from Seattle home sales during the May2014 - May2015 time period. After examining and cleaning the Seattle home data, we noticed several sections that could potentially affect the accuracy of our machine learningmodels. A couple of examples of information that can affect the accuracy of our models include data showing whether the home was renovated in addition to when the home was built, and a numeric scale to show the value of the home's view. 
-                </p>
+.switch-field {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
 
-                <p>After taking this into consideration we decided that a successful prediction model should have at least a 75% accuracy reading. </p>
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
 
-                <br>
-        </main>
+.switch-field label {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding: 8px 16px;
+  margin-right: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.1s ease-in-out;
+}
 
-        <col3>
-        </col3>
+.switch-field label:hover {
+  cursor: pointer;
+}
 
-        <aside>
-            <br><br>
+.switch-field input:checked + label {
+  background-color: lightgoldenrodyellow;
+  box-shadow: none;
+}
 
-            <h4 class="imageNav-header">ML Models</h4>
+.switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
 
-            <br>
+.switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
 
-            <button onclick="document.location='Model/index.html'">Multiple Linear Regression</button> <br><br>
-            
-            <button onclick="document.location='heroku.html'">Random Forest</button> <br><br>
+.form {
+  max-width: 370px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  text-align: right;
+  line-height: 1.625;
+  margin: 8px auto;
+  padding-left: 16px;
+  z-index: 2;
+}
 
-            <h4 class="imageNav-header">Charts</h4><br>
+h2 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.area {
+  font-family: "Raleway", sans-serif;
+  outline: 0;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 5px;
+}
 
-            <button onclick="document.location='tab1.html'">Tableau Visualizations</button>
+.location {
+  /* text-indent: 30%; */
+  width: 70%;
+  margin-left: 10px;
+  padding: 8px;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  position: relative;
+  display: inline-block;
+  transform: scale(1.1);
+}
 
-            <br><br><br>
+.location:after {
+  transition: 0.2s;
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
 
-            <a style="font-size:26px;color:#577399" href="https://github.com/ericgwu715/final_project-">Link to GitHub</a>
+.submit {
+  margin-top: 20px;
+  width: 76%;
+  color: white;
+  border: 4px solid white;
+  border-radius: 25px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: rgb(132, 24, 179);
+  box-shadow: inset 0 0 0 0 #d80286;
+  transition: ease-out 0.4s;
+}
 
-            <br><br>
+/* .submit:hover {
+  box-shadow: inset 400px 0 0 0 #d80286;
+} */
 
-            <a style="font-size:26px;color:#577399" href="kidding.html">Q&A</a>
+.result {
+  background: lightgreen;
+  color: black;
+  width: 76%;
+  border: 0;
+  border: 2px solid darkblue;
+  margin: 25px 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 60px;
+  text-align: center;
+}
 
-        </aside>
+.button {
+  background-color: lightgray;
+  border: none;
+  
+  color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-        <col5></col5>
+.feature_value {
+  width: 160px;
+  height: 25px;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
 
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcLd-v-e37sOyKwUi57B0N1HBadHkwaxPx1gWlgo3iBKvMEovs87Y2KZivh1Xj9mhLUw003QGM7PUW/embed?start=false&loop=false&delayms=3000" frameborder="0" width=800 height=480 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-        </iframe>
-
-        <lastrowspace>
-            <br><br><br><br><br><br>
-        </lastrowspace>
-        
-        <footer>
-            <div class="footer">Seattle House Price Prediction - Team Waka Waka <br>
-                Adil Ahmed | Eric Wu | Hannah Golledge | Hung Nguyen | Karen Galindo Choudhary | Monte Rodriguez
-            </div>
-        </footer>
-
-    </body>
-</html>
-
-<!-- width="960" height="569" -->
+#click {
+  background-color: lightseagreen;
+  border: none;
+  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: solid 1px;
+  border-radius: 5px;
+}
