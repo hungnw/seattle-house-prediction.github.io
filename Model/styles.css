@@ -167,7 +167,7 @@ h2 {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 20px;
   letter-spacing: 1px;
-  cursor: pointer;
+  /* cursor: pointer; */
   background-color: rgb(132, 24, 179);
   box-shadow: inset 0 0 0 0 #d80286;
   transition: ease-out 0.4s;
