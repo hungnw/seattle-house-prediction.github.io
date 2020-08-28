@@ -120,10 +120,10 @@ p{
 }
 
 
-.active, .imageNav-photo:hover{
+/* .active, .imageNav-photo:hover{
     border-color:#011627;
     border-style: solid; 
-}
+} */
 
 .footer{
 	background-color: #495867; 
@@ -151,6 +151,7 @@ a.button {
 	color: initial;
 }
 
+
 button {
 	background-color: #011627; 
 	border: none;
@@ -162,8 +163,19 @@ button {
 	font-size: 20px;
 	border-radius: 8px;
 	width:200px;
+	cursor: pointer;
+
 }
 
-/* .button {
-	
-  } */
+button:hover {
+	background-color: lightseagreen;
+  }
+
+a {
+	color:#577399;
+}
+
+a: hover {
+	color: orange;
+	background-color: lightseagreen;
+}
