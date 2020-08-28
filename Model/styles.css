@@ -213,6 +213,14 @@ h2 {
   cursor: pointer;
 }
 
+.feature_value:hover {
+  background-color: lightsalmon;
+}
+
+h2:hover {
+  color: lightsalmon;
+}
+
 #click {
   background-color: darkcyan;
   border: none;
@@ -227,4 +235,8 @@ h2 {
   cursor: pointer;
   border: solid 1px white;
   border-radius: 5px;
+}
+
+#click:hover {
+  background-color: blue;
 }
