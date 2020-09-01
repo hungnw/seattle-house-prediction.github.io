@@ -1,24 +1,25 @@
 body,
 html {
-  height: 100%;
+     height: 100%;
+     font-family: Arial, Helvetica, sans-serif;
 }
 
 .img {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(19, 19, 235, 0.5),
-      rgba(22, 96, 207, 0.735)
-    ),
-    url("seatle.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-size: 100% 100%;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
+     background-image: linear-gradient(
+          to bottom,
+          rgba(19, 19, 235, 0.5),
+          rgba(22, 96, 207, 0.735)
+     ),
+     url("seatle.jpg");
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-size: 100% 100%;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -1;
 }
 
 .title {
@@ -30,78 +31,72 @@ html {
 }
 
 .title:hover {
-  transition: 0.5s;
-  color: yellow
-   /* #d80286 */
-   ;
+     transition: 0.5s;
+     color: yellow;
 }
 
 input[type="number"],
 select option {
-  background-color:lightgoldenrodyellow
-   /* #d80286 */
-   ;
-  color: black;
+     background-color:lightgoldenrodyellow;
+     color: black;
 }
 
 .sqft,
 .bath,
 .bhk,
 .loc {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 32px;
-  margin: 0 0 24px;
-
-
+     color: #ffffff;
+     font-family: "Raleway", sans-serif;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 32px;
+     margin: 0 0 24px;
 }
 
 .switch-field {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 36px;
-  overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 36px;
+     overflow: hidden;
 }
 
 .switch-field input {
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  width: 1px;
-  border: 0;
-  overflow: hidden;
+     position: absolute !important;
+     clip: rect(0, 0, 0, 0);
+     height: 1px;
+     width: 1px;
+     border: 0;
+     overflow: hidden;
 }
 
 .switch-field label {
-  background-color: white;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  line-height: 1;
-  text-align: center;
-  padding: 8px 16px;
-  margin-right: -1px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  transition: all 0.1s ease-in-out;
+     background-color: white;
+     color: rgb(0, 0, 0);
+     font-size: 14px;
+     line-height: 1;
+     text-align: center;
+     padding: 8px 16px;
+     margin-right: -1px;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+     transition: all 0.1s ease-in-out;
 }
 
 .switch-field label:hover {
-  cursor: pointer;
+     inter;
 }
 
 .switch-field input:checked + label {
-  background-color: lightgoldenrodyellow;
-  box-shadow: none;
+     background-color: lightgoldenrodyellow;
+     box-shadow: none;
 }
 
 .switch-field label:first-of-type {
-  border-radius: 4px 0 0 4px;
+     border-radius: 4px 0 0 4px;
 }
 
 .switch-field label:last-of-type {
-  border-radius: 0 4px 4px 0;
+     border-radius: 0 4px 4px 0;
 }
 
 .form {
@@ -242,21 +237,47 @@ h2:hover {
 }
 
 .footer{
-	background-color: #495867; 
-    border-top-style: solid; 
-    border-top-width: 0px; 
-    border-top-color: lightblue;
-    color: white; 
-    background-color: rgb(32, 91, 158);
-    /* background-color: transparent; */
+     background-color: #495867; 
+     border-top-style: solid; 
+     border-top-width: 0px; 
+     border-top-color: lightblue;
+     color: white; 
+     background-color: rgb(32, 91, 158);
+     /* background-color: transparent; */
+     min-height: 50px; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px; 
+     text-align: center; 
+     /* position: fixed; */
+     padding-top: 15px; 
+     width: 100%;
+     left: 0;
+     bottom: 0;
+}
 
-    min-height: 50px; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; 
-    text-align: center; 
-    /* position: fixed; */
-    padding-top: 10px; 
-	width: 100%;
-	left: 0;
-	bottom: 0;
+.navigation .navbar-brand{
+	color: white; 
+	margin-left: 50px; 
+	padding: inherit; 
+	font-weight: bold; 
+	background-color: #011627;
+	background-color:green;
+
+	font-family: Arial, serif;
+	border-radius: 8px;
+}
+
+button {
+	background-color: lightseagreen; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 8px;
+	width:200px;
+	cursor: pointer;
+
 }
