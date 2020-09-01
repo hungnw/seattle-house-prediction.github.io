@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Seattle Housing Price Prediction</title>
+     ​    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+          <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="grid.css">
+     
+          <style>
+               .dropbtn {
+               background-color: #4CAF50;
+               color: white;
+               padding: 10px;
+               font-size: 16px;
+               border: none;
+               }
+
+               .dropdown {
+               position: relative;
+               display: inline-block;
+               
+               }
+
+               .dropdown-content {
+               display: none;
+               position: absolute;
+               background-color: #f1f1f1;
+               min-width: 160px;
+               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+               z-index: 1;
+               }
+
+               .dropdown-content a {
+               color: black;
+               padding: 12px 16px;
+               text-decoration: none;
+               display: block;
+               }
+
+               .dropdown-content a:hover {background-color: #ddd;}
+
+               .dropdown:hover .dropdown-content {display: block;}
+
+               .dropdown:hover .dropbtn {background-color: #3e8e41;}
+          </style>
+          ​
+     </head>
+
+    <body>
+          <header class="navigation">
+
+               <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                    <!-- <div>
+                         <button class="dropbtn">Final Project</button>
+
+                    </div> -->
+
+                    <div id="h2" class="dropdown">
+                         <button class="dropbtn" style="font-size: 17px;">Quick Links</button>
+                         <div class="dropdown-content">
+                              <a href="Model/index.html">Multiple Linear Regression</a>
+                              <a href="https://bootcamp2020-ml.herokuapp.com/">Random Forest</a>
+                              <a href="tableau.html">Tableau Visualizations</a>
+                         </div>
+                       
+
+
+
+                    </div>
+                  
+                    <!-- <div id="h3"></div>
+                    <a style="font-size:16px;color:darkcyan" href="https://github.com/ericgwu715/final_project-">Link to GitHub | </a>
+
+                   
+          
+                    <a style="font-size:16px;color:darkcyan" href="qa.html"> Q&A</a>
+               </div> -->
+
+               </nav>
+
+          </header>
+
+          <col1>
+          </col1>
+
+          <main>
+               <br><br>
+
+               <!-- <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    Sorry, your browser does not support inline SVG.
+               </svg> -->
+               <h1 class="description-header">Predicting Seattle Metropolitan Area Home Prices With Machine Learning
+               </h1>
+               
+               <p>Team Waka Waka - UCI Data Bootcamp 2020</p>
+
+               <hr>
+               <!-- <a href="index.html"> -->
+               <img src="images/seattle3.jpg" alt="Seattle", title="img" class="imageNav-photo", width="15", height="15">
+               <!-- </a> -->
+               <br><br>
+
+               <p>Welcome to the Seattle House Price Prediction website!</p>
+
+               <p>We want to predict Seattle metropolitan home prices using two different machine learning models: Multiple Linear Regression and Random Forest. 
+               
+               <p>The dataset includes house data from King County in US State of Washington, which also covers Seattle Metropolitan Area. The dataset consists of 20 attributes and 21613 observations, including historic data of houses sold between May 2014 to May 2015.</p> 
+               
+               <p>After examining and cleaning the Seattle home data, we noticed several sections that could potentially affect the accuracy of our machine learningmodels. A couple of examples of information that can affect the accuracy of our models include data showing whether the home was renovated in addition to when the home was built, and a numeric scale to show the value of the home's view. 
+               </p>
+
+               <br>
+     </main>
+
+     <col3>
+     </col3>
+
+     <aside>
+          <br><br>
+
+          <h4 class="imageNav-header">ML Models</h4>
+          <hr>
+          
+
+          <button onclick="document.location='Model/index.html'">Multiple Linear Regression</button> <br><br>
+          
+          <button onclick="document.location='https://bootcamp2020-ml.herokuapp.com/'">Random Forest</button> <br><br>
+
+          <h4 class="imageNav-header">Charts</h4>
+          <hr>
+
+          <button onclick="document.location='tableau.html'">Tableau Visualizations</button>
+
+          <br><br>
+          <hr>
+          <a style="font-size:26px;color:darkcyan" href="https://github.com/ericgwu715/final_project-">Link to GitHub</a>
+
+          <br>
+          <hr>
+          <a style="font-size:26px;color:darkcyan" href="qa.html">Q&A</a>
+          <hr>
+
+     </aside>
+
+     <col5></col5>
+
+     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcLd-v-e37sOyKwUi57B0N1HBadHkwaxPx1gWlgo3iBKvMEovs87Y2KZivh1Xj9mhLUw003QGM7PUW/embed?start=false&loop=false&delayms=3000" frameborder="0" width=800 height=480 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+     </iframe>
+
+     <lastrowspace>
+          <br><br><br><br><br><br>
+     </lastrowspace>
+        
+     <footer>
+          <div class="footer">Seattle House Price Prediction - Team Waka Waka <br>
+               Adil Ahmed | Eric Wu | Hannah Golledge | Hung Nguyen | Karen Galindo Choudhary | Monte Rodriguez
+          </div>
+     </footer>
+
+     </body>
+</html>
+
