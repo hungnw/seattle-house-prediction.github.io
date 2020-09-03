@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+  padding: 10px 30px;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 45%;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+.right {
+  /* background-color: lightblue; */
+  float: left;
+  width: 11%;
+  padding: 10px 15px;
+  /* margin-top: 7px; */
+}
+
+button {
+     font-size: 22px;
+     padding: 10px 20px;
+     width: 100%;
+     background-color: lightseagreen; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/* font-size: 20px; */
+	border-radius: 8px;
+	/* width:200px; */
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: mediumseagreen;
+  }
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:1px 20px;">
+  <h1 style="color:darkcyan">Final Project</h1>
+  <!-- <h3 style="font-size:22px;color:darkorange">Waka Waka</h3> -->
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+
+     <div class="menuitem" style="font-size: 20px;font-weight: bold;"> Team Waka Waka</div>
+     <div class="menuitem">Adil Ahmed</div>
+
+    <div class="menuitem">Eric Wu</div>
+    <div class="menuitem">Hannah Golledge</div>
+
+    <div class="menuitem">Hung Nguyen</div>
+    <div class="menuitem">Karen Galindo Choudhary</div>
+    <div class="menuitem">Monte Rodriguez</div>
+  </div>
+
+<div class="main">
+     
+
+     <h1 class="description-header">Predicting Seattle Metropolitan Area Home Prices With Machine Learning
+     </h1>
+     
+     <p style="color:darkcyan; font-size: 20px;">Team Waka Waka - UCI Data Bootcamp 2020</p>
+
+     <hr>
+     <!-- <a href="index.html"> -->
+     <img src="seattle3.jpg" alt="Seattle" style="width:100%">
+
+     
+     <!-- </a> -->
+     <br><br>
+
+     <p>Welcome to the Seattle House Price Prediction website!</p>
+
+     <p>We want to predict Seattle metropolitan home prices using two different machine learning models: Multiple Linear Regression and Random Forest. 
+     
+     <p>The dataset includes house data from King County in US State of Washington, which also covers Seattle Metropolitan Area. The dataset consists of 20 attributes and 21613 observations, including historic data of houses sold between May 2014 to May 2015.</p> 
+     
+     <p>After examining and cleaning the Seattle home data, we noticed several sections that could potentially affect the accuracy of our machine learningmodels. A couple of examples of information that can affect the accuracy of our models include data showing whether the home was renovated in addition to when the home was built, and a numeric scale to show the value of the home's view. 
+     </p>
+
+     <br>
+
+     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcLd-v-e37sOyKwUi57B0N1HBadHkwaxPx1gWlgo3iBKvMEovs87Y2KZivh1Xj9mhLUw003QGM7PUW/embed?start=false&loop=false&delayms=3000" frameborder="0" 
+     
+     width=800 height=480
+     
+     allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+     </iframe>
+     <br><br><br>
+  </div>
+
+  <div class="right">
+    <h1>ML Models</h1>
+    <button onclick="document.location='Model/index.html'">Multiple Linear Regression</button>
+    <br><br>
+    <button onclick="document.location='https://bootcamp2020-ml.herokuapp.com/'">Random Forest</button>
+     <br><br>
+<hr>
+
+    <h1>Charts</h1>
+    <button onclick="document.location='tableau.html'">Tableau Visualizations</button>
+    <br><br>
+    <hr>
+    <br>
+    <a style="font-size:22px;color:darkcyan" href="https://github.com/ericgwu715/final_project-">Link to GitHub</a>
+    <br><br>
+    <hr>
+    <br>
+    <a style="font-size:22px;color:darkcyan" href="qa.html">Q&A</a>
+    <br><br><br>
+  </div>
+</div>
+
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:16px;"> Seattle House Price Prediction - Team Waka Waka <br>
+     Adil Ahmed | Eric Wu | Hannah Golledge | Hung Nguyen | Karen Galindo Choudhary | Monte Rodriguez</div>
+
+</body>
+</html>
