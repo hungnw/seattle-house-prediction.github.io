@@ -76,6 +76,11 @@ p3 {
 	button:focus {
 	outline: 1px dotted;
 	}
+	
+	.ask {
+	margin-left: 25%;
+	margin-right:25%;
+	}
 }
 
 .description-content {
